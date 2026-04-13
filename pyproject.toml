@@ -1,0 +1,22 @@
+[project]
+name = "connected-data-products-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "earthaccess>=0.17.0",
+    "h5netcdf>=1.8.1",
+    "h5py>=3.16.0",
+    "icechunk>=1.0.0,<2",
+    "matplotlib",
+    "jupytext",
+    "mystmd>=1.8.3",
+    "obspec-utils @ git+https://github.com/virtual-zarr/obspec-utils@main",
+    "obstore>=0.5.0",
+    "aiohttp",
+    "virtualizarr[hdf] @ git+https://github.com/zarr-developers/VirtualiZarr@main",
+    "xarray @ git+https://github.com/pydata/xarray@main",
+    "zarr>=3.1.0",
+    "jupyterlab>=4.5.6",
+]

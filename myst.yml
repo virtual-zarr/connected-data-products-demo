@@ -1,0 +1,16 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 162221e9-3552-45c0-88c7-917dcffe9e06
+  title: Connected Data Products Demo
+  description: >
+    Virtualize NISAR GCOV data into an Icechunk store and query it
+    without downloading or converting the original HDF5 file.
+  toc:
+    - file: index.md
+    - file: 01-virtualize-s3.ipynb
+    - file: 01-virtualize-https.ipynb
+    - file: 02-query-icechunk.ipynb
+    - file: 03-query-h5netcdf.ipynb
+site:
+  template: book-theme
