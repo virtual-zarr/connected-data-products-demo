@@ -31,7 +31,7 @@ To explore how NISAR chunk manifests look interactively, see the [NISAR Manifest
 ## Running locally
 
 ```bash
-git clone https://github.com/maxrjones/connected-data-products-demo
+git clone https://github.com/virtual-zarr/connected-data-products-demo
 cd connected-data-products-demo
 uv sync
 uv run jupyter lab
