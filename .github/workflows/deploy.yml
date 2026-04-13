@@ -19,6 +19,8 @@ jobs:
         uses: "astral-sh/setup-uv@v5"
       - name: "Build site"
         run: "uv run myst build --html"
+        env:
+          BASE_URL: "/${{ github.event.repository.name }}"
       - name: "Upload site artifact"
         uses: "actions/upload-pages-artifact@v3"
         with:
