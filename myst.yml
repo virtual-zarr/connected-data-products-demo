@@ -9,7 +9,6 @@ project:
   toc:
     - file: index.md
     - file: 01-virtualize-s3.ipynb
-    - file: 01-virtualize-https.ipynb
     - file: 02-query-icechunk.ipynb
     - file: 03-query-h5netcdf.ipynb
 site:

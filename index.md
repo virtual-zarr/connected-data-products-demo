@@ -55,29 +55,17 @@ No data is copied. The original files stay where they are. Everyone reads from t
 
 ## This demo
 
-We virtualize a [NISAR](https://nisar.jpl.nasa.gov/) GUNW (Geocoded Unwrapped Interferogram) granule, a large HDF5 file of SAR data with chunked arrays, and persist the virtual references in Icechunk.
-
-```{mermaid}
-flowchart TD
-    subgraph "1. Virtualize"
-        A[NISAR GUNW on NASA S3] -->|VirtualiZarr reads metadata| B[Virtual Zarr references]
-        B -->|persist| C[Icechunk store]
-    end
-    subgraph "2. Query"
-        C -->|xr.open_zarr| D[Query 10 points]
-        A -.->|fetch 10 chunks| D
-        D --> E[PyGMT visualization]
-    end
-```
+We apply this pattern to [NISAR](https://nisar.jpl.nasa.gov/) GUNW (Geocoded Unwrapped Interferogram) data. NISAR is a new SAR mission that measures surface deformation, including ice sheet motion. The demo uses a GUNW granule over New Zealand (chosen because NISAR's cryosphere products are still in early release), but the workflow applies to any HDF5 dataset.
 
 To explore how NISAR chunk manifests look interactively, see the [NISAR Manifest Explorer](https://github.com/virtual-zarr/nisar-manifest-explorer).
 
 ## Notebooks
 
 1. [**Virtualize NISAR GUNW**](./01-virtualize-s3.ipynb): Create virtual references via S3 and persist to Icechunk
-2. [**Virtualize NISAR GUNW (HTTPS)**](./01-virtualize-https.ipynb): Same via HTTPS (works from anywhere, Icechunk support in progress)
-3. [**Query via Icechunk**](./02-query-icechunk.ipynb): Open the Icechunk store and query points
-4. [**Query via h5netcdf**](./03-query-h5netcdf.ipynb): Query the same points the traditional way (baseline)
+2. [**Query via Icechunk**](./02-query-icechunk.ipynb): Open the Icechunk store, extract a spatial subset, and visualize
+3. [**Query via h5netcdf**](./03-query-h5netcdf.ipynb): Same query the traditional way (baseline comparison)
+
+There is also an [HTTPS version](./01-virtualize-https.ipynb) of the virtualization notebook that works from anywhere, though Icechunk support for earthaccess HTTPS is still in progress.
 
 ## Why this matters for hackday projects
 
