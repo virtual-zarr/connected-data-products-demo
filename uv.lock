@@ -11,7 +11,7 @@ resolution-markers = [
 ]
 
 [options]
-exclude-newer = "2026-04-06T03:12:30Z"
+exclude-newer = "2026-04-05T18:35:17Z"
 
 [[package]]
 name = "aiobotocore"
@@ -487,6 +487,7 @@ dependencies = [
     { name = "mystmd" },
     { name = "obspec-utils" },
     { name = "obstore" },
+    { name = "pygmt" },
     { name = "virtualizarr", extra = ["hdf"] },
     { name = "xarray" },
     { name = "zarr" },
@@ -505,6 +506,7 @@ requires-dist = [
     { name = "mystmd", specifier = ">=1.8.3" },
     { name = "obspec-utils", git = "https://github.com/virtual-zarr/obspec-utils?rev=main" },
     { name = "obstore", specifier = ">=0.5.0" },
+    { name = "pygmt" },
     { name = "virtualizarr", extras = ["hdf"], git = "https://github.com/zarr-developers/VirtualiZarr?rev=main" },
     { name = "xarray", git = "https://github.com/pydata/xarray?rev=main" },
     { name = "zarr", specifier = ">=3.1.0" },
@@ -2379,6 +2381,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz", hash = "sha256:6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f", size = 4955991, upload-time = "2026-03-29T13:29:33.898Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl", hash = "sha256:81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176", size = 1231151, upload-time = "2026-03-29T13:29:30.038Z" },
+]
+
+[[package]]
+name = "pygmt"
+version = "0.18.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "pandas" },
+    { name = "xarray" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ec/00/be2269bf4ccc957e391232c2f03f8bb3af7dc36b7a501b7c0dac0f2e7beb/pygmt-0.18.0.tar.gz", hash = "sha256:9b285ed422c760cc043106205cf6d67085442ecbb86aaecdaabedd8507aae740", size = 238671, upload-time = "2026-01-12T02:45:24.557Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/6d/088e17906b1632c9c4b574aa42b5629e2b3228827c044557d5c721cfaf80/pygmt-0.18.0-py3-none-any.whl", hash = "sha256:fdf2434beaa0bd7891f2282fb79fc2420b0485dda9baa7e209153b110aea7b64", size = 332521, upload-time = "2026-01-12T02:45:22.879Z" },
 ]
 
 [[package]]

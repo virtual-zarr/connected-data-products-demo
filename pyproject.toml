@@ -14,6 +14,7 @@ dependencies = [
     "mystmd>=1.8.3",
     "obspec-utils @ git+https://github.com/virtual-zarr/obspec-utils@main",
     "obstore>=0.5.0",
+    "pygmt",
     "aiohttp",
     "virtualizarr[hdf] @ git+https://github.com/zarr-developers/VirtualiZarr@main",
     "xarray @ git+https://github.com/pydata/xarray@main",

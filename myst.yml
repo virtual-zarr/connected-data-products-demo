@@ -4,7 +4,7 @@ project:
   id: 162221e9-3552-45c0-88c7-917dcffe9e06
   title: Connected Data Products Demo
   description: >
-    Virtualize NISAR GCOV data into an Icechunk store and query it
+    Virtualize NISAR GUNW data into an Icechunk store and query it
     without downloading or converting the original HDF5 file.
   toc:
     - file: index.md
