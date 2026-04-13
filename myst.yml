@@ -14,3 +14,5 @@ project:
     - file: 03-query-h5netcdf.ipynb
 site:
   template: book-theme
+  options:
+    base_url: /connected-data-products-demo
